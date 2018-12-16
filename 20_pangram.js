@@ -13,7 +13,9 @@ If the given string has any uppercase or numbers, it should return false
 */
 
 function isPangram(string) {
-    //Your code here
+    let chars = string.match(/[A-Z]/gi);
+    console.log(chars);
+    return string.includes(chars);
 }
 
 const assert = require('assert');
